@@ -66,3 +66,11 @@
 .bg-6 {
     background-color: $color-6;
 }
+
+.bg-gradient--4-5 {
+    background: linear-gradient(45deg, $color-4, $color-5);
+}
+
+.bg-gradient--4-1 {
+    background: linear-gradient(45deg, $color-4, $color-1);
+}

@@ -1,0 +1,102 @@
+// # components.forms
+// ============================================================================
+//
+// Form component styles
+
+.input {
+    padding: 6px 6px 6px 4px;
+    font-family: $base-font-sans;
+    border-left: 2px solid $color-5;
+    
+    &:focus, &:active {
+        border: 2px solid $color-5;
+        padding: 4px 4px 4px 4px;
+    }
+    
+    @include m(full) {
+        width: 100%;
+    }
+    
+    @include m(fixed) {
+        min-width: 180px;
+    }
+    
+    @include m(light) {
+        background-color: rgba(255, 255, 255, .1);
+        color: #fff;
+        padding: 5px 0 5px 5px;
+        border: 1px solid rgba(255, 255, 255, .3);
+        
+        &:focus, &:active { 
+            border-color: rgba(255, 255, 255, .7);
+        }
+        
+        &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, .7);
+        }
+
+        &:-moz-input-placeholder {
+            color: rgba(255, 255, 255, .7);
+        }
+
+        &::-moz-input-placeholder {
+            color: rgba(255, 255, 255, .7);
+        }
+
+        &::-ms-input-placeholder {
+            color: rgba(255, 255, 255, .7);
+        }
+    }
+    
+    @include m(dark) {
+        background-color: rgba(0, 0, 0, .05);
+        padding: 5px 0 5px 5px;
+        border: 1px solid rgba(0, 0, 0, .15);
+        
+        &:focus, &:active { 
+            border-color: $color-primary;
+        }
+        
+        &::-webkit-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        &:-moz-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        &::-moz-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        &::-ms-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+    }
+    
+    @include m(white) {
+        background-color: #ffffff;
+        padding: 5px 0 5px 5px;
+        border: 1px solid rgba(0, 0, 0, .15);
+        
+        &:focus, &:active { 
+            border-color: $color-primary;
+        }
+        
+        &::-webkit-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        &:-moz-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        &::-moz-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        &::-ms-input-placeholder {
+            color: rgba(0, 0, 0, .3);
+        }
+    }
+}

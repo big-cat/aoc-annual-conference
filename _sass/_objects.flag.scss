@@ -1,0 +1,54 @@
+//
+// objects.flag
+// ============================================================================
+// Flag object styles
+//
+
+.flag {
+    display: block;
+    width: 100%;
+
+    &__fix,
+    &__flex {
+        display: block;
+
+        .flag--top & {
+            vertical-align: top;
+        }
+
+        .flag--bottom & {
+            vertical-align: bottom;
+        }
+        
+        @include bp-m {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    &__fix {
+        padding-right: 10px;
+        
+        &--l {
+            padding-right: 30px;
+        }
+        
+        > img {
+            display: block;
+            max-width: none;
+            margin-bottom: 24px;
+            
+            @include bp-m {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    &__flex {
+        width: 100%;
+    }
+    
+    @include bp-m {
+        display: table;
+    }
+}

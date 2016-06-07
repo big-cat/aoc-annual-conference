@@ -1,0 +1,44 @@
+// # immutable.float
+// ============================================================================
+//
+// Immutable float styles
+
+.f--r {
+    float: right;
+}
+
+.f--l {
+    float: left;
+}
+
+.f--n {
+    float: none;
+}
+
+@include bp-m {
+    .f--r\@m {
+    float: right;
+}
+
+    .f--l\@m {
+        float: left;
+    }
+    
+    .f--n\@m {
+        float: none;
+    }
+}
+
+@include bp-l {
+    .f--r\@l {
+        float: right;
+    }
+
+    .f--l\@l {
+        float: left;
+    }
+    
+    .f--n\@l {
+        float: none;
+    }
+}

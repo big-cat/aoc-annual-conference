@@ -1,0 +1,13 @@
+// # immutable.clearfix
+// ============================================================================
+//
+// Immutable clearfix styles
+
+.clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

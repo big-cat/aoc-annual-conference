@@ -1,0 +1,51 @@
+// # components.hero
+// ============================================================================
+//
+// Hero component styles
+
+.hero {
+    width: 100%;
+    display: table;
+    min-height: 300px;
+    padding: 24px;
+    
+    &__content {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        
+        &--left {
+            text-align: left;
+        }
+        
+        &--right {
+            text-align: right;
+        }
+    }
+    
+    @include bp-m {
+        min-height: 350px;
+    }
+    
+    @include bp-l {
+        min-height: 400px;
+        height: 400px;
+    }
+    
+    &--small {
+        min-height: 70px;
+        height: 70px;
+    }
+    
+    &--large {
+        
+        @include bp-m {
+            min-height: 300px;
+        }
+    
+        @include bp-l {
+            min-height: 400px;
+            height: 400px;
+        }
+    }
+}

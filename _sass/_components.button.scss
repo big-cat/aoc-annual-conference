@@ -12,29 +12,29 @@ $button-border-width: 2px !default;
 $button-border-radius: 4px !default;
 
 .btn {
-    padding: $button-padding;
+    padding: 6px 12px;
     display: inline-block;
     text-decoration: none;
-}
-
-.btn--border {
-    border: $button-border-width solid $button-color;
-    border-radius: $button-border-radius;
-    color: $color-accent;
     
-    &:hover {
-        background-color: $button-color;
-        color: $color-white;
+    @include m(primary) {
+        background-color: $color-5;
+        color: #fff !important;
+        transition: background-color .5s ease-in-out;
+        
+        &:hover {
+            background-color: darken($color-5, 5%);
+        }
     }
-}
-
-.btn--border-white {
-    border: $button-border-width solid $color-white;
-    border-radius: $button-border-radius;
-    color: $color-white;
     
-    &:hover {
-        background-color: $color-white;
-        color: $button-color;
+    @include m(secondary) {
+        padding: 5px 11px;
+        border: 2px solid $color-5;
+        color: $color-5 !important;
+        transition: background-color .5s ease-in-out, color .5s ease-in-out;
+        
+        &:hover {
+            background-color: $color-5;
+            color: white !important;
+        }
     }
 }

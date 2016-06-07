@@ -1,0 +1,36 @@
+// # components.card
+// ============================================================================
+//
+// Card component styles
+
+.card {
+    padding: 24px;
+    
+    &__content {
+        ;
+    }
+    
+    @include m(s) {
+        min-height: 150px;
+        
+        @include bp-m {
+            min-height: 175px;
+        }
+        
+        @include bp-l {
+            min-height: 250px;
+        }
+    }
+    
+    @include m(l) {
+        min-height: 250px;
+        
+        @include bp-m {
+            min-height: 325px;
+        }
+        
+        @include bp-l {
+            min-height: 450px;
+        }
+    }
+}
