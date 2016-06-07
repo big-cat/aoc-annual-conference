@@ -12,7 +12,7 @@ $button-border-width: 2px !default;
 $button-border-radius: 4px !default;
 
 .btn {
-    padding: 6px 12px;
+    padding: 4px 12px;
     display: inline-block;
     text-decoration: none;
     
@@ -27,7 +27,7 @@ $button-border-radius: 4px !default;
     }
     
     @include m(secondary) {
-        padding: 5px 11px;
+        padding: 3px 11px;
         border: 2px solid $color-5;
         color: $color-5 !important;
         transition: background-color .5s ease-in-out, color .5s ease-in-out;
