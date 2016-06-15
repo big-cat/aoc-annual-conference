@@ -6,31 +6,11 @@
 .card {
     padding: 24px;
     
-    &__content {
-        ;
-    }
-    
     @include m(s) {
-        min-height: 150px;
-        
-        @include bp-m {
-            min-height: 175px;
-        }
-        
-        @include bp-l {
-            min-height: 250px;
-        }
+        min-height: 200px;
     }
     
     @include m(l) {
-        min-height: 250px;
-        
-        @include bp-m {
-            min-height: 325px;
-        }
-        
-        @include bp-l {
-            min-height: 450px;
-        }
+        min-height: 450px;
     }
 }
