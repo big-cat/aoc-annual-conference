@@ -1,2 +1,4 @@
 sass:
     style: compressed
+    
+baseurl: http://big-cat.github.io/aoc-annual-conference/
