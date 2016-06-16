@@ -37,4 +37,8 @@ $button-border-radius: 4px !default;
             color: white !important;
         }
     }
+    
+    @include m(small) {
+        padding: 2px 8px;
+    }
 }
