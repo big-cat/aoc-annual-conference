@@ -47,6 +47,10 @@ ul, ol {
     list-style-position: outside;
     margin-left: 1em;
 }
+
+ul {
+    list-style-type: square;
+}
  
 figcaption {
     font-family: $base-font-sans;
