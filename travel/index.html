@@ -1,11 +1,8 @@
 ---
 layout: default
+title: Travel &amp; Location
 ---
-<div class="hero p bg-gradient--4-5 c-white bg-s--cover bg-p--50-50" style="background-image: url({{ site.url }}/images/hero-bg-conference.jpg);">
-    <div class="hero__content">
-        <h1 class="h1 m-b--n">Travel &amp; Location</h1>
-    </div>
-</div>
+{% include page-hero.html %}
 <div class="bg-2 p-v--s">
     <div class="wrap wrap--padding">
         <nav>
@@ -18,15 +15,12 @@ layout: default
         </nav>
     </div>
 </div>
-
-<div class="wrap wrap--padding p-t p-t--l@m p-b p-b--l@m">
-    <img src="{{ site.url }}/images/icc-birmingham.jpg" alt="" class="b-r">
-</div>
-
+{% include sponsor-banner.html %}
 <div class="wrap wrap--padding p-t p-t--l@m p-b p-b--l@m">
     <div class="t-a--c">
         <h2 class="h2 m-b--l">The International Convention Centre (ICC)</h2>
     </div>
+    <img src="{{ site.url }}/images/icc-birmingham.jpg" alt="" class="b-r m-b">
     <div class="bg-white p p--l@m b-r">
         <p>The ICC’s location in the centre of Birmingham, with its excellent road, rail and air links, makes it one of the busiest conference venues in Europe.</p>
 

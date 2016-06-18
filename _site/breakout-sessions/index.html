@@ -9,27 +9,29 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="bg-1 p-v--s">
+<div class="bg-1 c-white p-v--s">
     <div class="wrap wrap--padding">
         <div class="clearfix">
             <a href="http://big-cat.github.io/aoc-annual-conference//"><img src="http://big-cat.github.io/aoc-annual-conference//images/primary-logo.png" alt="" class="primary-logo d--b f--l"></a>
-            <nav class="f--r">
-                <ul class="nav c-white" style="top: 3px;">
+            <nav class="f--r" style="top: 3px;">
+                <div class="d--n@m t-a--r">
+                <p class="m-b--n btn btn--small btn--primary">Menu</p></div>
+                <ul class="nav d--n d--b@m">
                     <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//conference">Conference</a></li>
                     <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//exhibition">Exhibition</a></li>
                     <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//programme">Programme</a></li>
                     <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//sponsors">Sponsors</a></li>
-                    <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//social">Social</a></li>
-                    <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//accommodation">Info</a></li>
+                    <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//accommodation">Information</a></li>
                     <li class="nav__item nav__item--spaced"><a href="http://big-cat.github.io/aoc-annual-conference//booking" class="btn btn--small btn--primary">Booking</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </div>
-<div class="hero p bg-gradient--4-1 c-white bg-s--cover bg-p--50-50" style="background-image: url(http://big-cat.github.io/aoc-annual-conference//images/hero-bg-exhibition.jpg);">
+<div class="hero p bg-gradient--4-5 c-white bg-s--cover bg-p--50-50" style="background-image: url(http://big-cat.github.io/aoc-annual-conference//images/hero-bg-conference.jpg);">
     <div class="hero__content">
-        <h1 class="h1 m-b--n">Breakout Sessions</h1>
+        <h1 class="h1">Breakout Sessions</h1>
+        <p class="h4">AoC Annual Conference &amp; Exhibition, 15-17 November 2016, The ICC Birmingham</p>
     </div>
 </div>
 <div class="bg-2 p-v--s">
@@ -53,7 +55,8 @@
             <div class="layout__item layout__item--2-of-12 t-a--c"><img src="http://big-cat.github.io/aoc-annual-conference//images/aqa-sponsor-logo.jpg" alt="" height="100px;" class="d--b"></div>
             <div class="layout__item layout__item--2-of-12 t-a--c"><img src="http://big-cat.github.io/aoc-annual-conference//images/ocr-sponsor-logo.jpg" alt="" height="100px;" class="d--b"></div>
             <div class="layout__item layout__item--2-of-12 t-a--c"><img src="http://big-cat.github.io/aoc-annual-conference//images/pearson-sponsor-logo.jpg" alt="" height="100px;" class="d--b"></div>
-            <div class="layout__item layout__item--6-of-12 t-a--c"><p class="m-b--n" style="line-height: 50px"><a href="http://big-cat.github.io/aoc-annual-conference//sponsors">Find out more about our sponsors</a></p></div>
+            <div class="layout__item layout__item--6-of-12 t-a--c"><p class="m-b--n" style="line-height: 50px"><a href="http://big-cat.github.io/aoc-annual-conference//sponsors" class="btn btn--small btn--[
+            ]">Find out more about our sponsors</a></p></div>
         </div>
     </div>
 </div>
@@ -74,17 +77,17 @@
     <div class="layout clearfix">
         <div class="layout__item layout__item--12-of-12 layout__item--9-of-12@m m-b m-b--n@m">
             <div class="layout layout--flush">
-                <div class="layout__item layout__item--4-of-12">
+                <div class="layout__item layout__item--12-of-12 layout__item--4-of-12@m">
                     <div class="bg-white p t-a--c">
                         <p class="m-b--n">Tues Nov 15th</p>
                     </div>
                 </div>
-                <div class="layout__item layout__item--4-of-12">
+                <div class="layout__item layout__item--12-of-12 layout__item--4-of-12@m">
                     <div class="bg-meta--dark p t-a--c">
                         <p class="m-b--n">Weds Nov 16th</p>
                     </div>
                 </div>
-                <div class="layout__item layout__item--4-of-12">
+                <div class="layout__item layout__item--12-of-12 layout__item--4-of-12@m">
                     <div class="bg-meta--dark p t-a--c">
                         <p class="m-b--n">Thurs Nov 17th</p>
                     </div>
@@ -174,6 +177,13 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/node_modules/tabslet/jquery.tabslet.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.tabs').tabslet();
+});
+</script>
 </body>
 </html>
 

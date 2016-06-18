@@ -1,21 +1,19 @@
 ---
 layout: default
+title: Sponsors
 ---
-<div class="hero p bg-gradient--4-1 c-white bg-s--cover bg-p--50-50" style="background-image: url({{ site.url }}/images/hero-bg-exhibition.jpg);">
-    <div class="hero__content">
-        <h1 class="h1 m-b--n">Sponsors</h1>
+{% include page-hero.html %}
+<div class="bg-2 p-v--s">
+    <div class="wrap wrap--padding">
+        <nav>
+            <ul class="nav c-white">
+                <li class="nav__item nav__item--spaced"><a href="{{ site.url }}/sponsors">Sponsors</a></li>
+                <li class="nav__item nav__item--spaced"><a href="{{ site.url }}/sponsorship">Sponsorship opportunities</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
-<div class="bg-white p--s d--n d--b@l">
-    <div class="wrap">
-        <div class="layout">
-            <div class="layout__item layout__item--2-of-12 t-a--c"><img src="{{ site.url }}/images/aqa-sponsor-logo.jpg" alt="" height="100px;" class="d--b"></div>
-            <div class="layout__item layout__item--2-of-12 t-a--c"><img src="{{ site.url }}/images/ocr-sponsor-logo.jpg" alt="" height="100px;" class="d--b"></div>
-            <div class="layout__item layout__item--2-of-12 t-a--c"><img src="{{ site.url }}/images/pearson-sponsor-logo.jpg" alt="" height="100px;" class="d--b"></div>
-            <div class="layout__item layout__item--6-of-12 t-a--c"><p class="m-b--n" style="line-height: 50px"><a href="{{ site.url }}/sponsors">Find out more about our sponsors</a></p></div>
-        </div>
-    </div>
-</div>
+{% include sponsor-banner.html %}
 
 <div class="wrap wrap--padding p-t p-t--l@m p-b p-b--l@m">
     <div class="t-a--c">

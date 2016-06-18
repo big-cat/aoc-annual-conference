@@ -132,3 +132,22 @@
         top: 24px;
     }
 }
+
+.image-grid {
+    width: 100%;
+    padding-bottom: 75%;
+}
+
+.count::before {
+    counter-increment: count;
+    content: counter(count);
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.tabs .active div {
+    background: #ffffff;
+}

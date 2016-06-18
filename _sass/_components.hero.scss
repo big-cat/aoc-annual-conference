@@ -6,7 +6,7 @@
 .hero {
     width: 100%;
     display: table;
-    min-height: 300px;
+    min-height: 225px;
     padding: 24px;
     
     &__content {
@@ -24,12 +24,12 @@
     }
     
     @include bp-m {
-        min-height: 350px;
+        min-height: 275px;
     }
     
     @include bp-l {
-        min-height: 400px;
-        height: 400px;
+        min-height: 325px;
+        height: 325px;
     }
     
     &--small {
