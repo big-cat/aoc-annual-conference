@@ -12,9 +12,10 @@ $button-border-width: 2px !default;
 $button-border-radius: 4px !default;
 
 .btn {
-    padding: 4px 12px;
+    padding: 14px 12px;
     display: inline-block;
     text-decoration: none;
+    line-height: 1;
     
     @include m(primary) {
         background-color: $color-5;
@@ -39,6 +40,6 @@ $button-border-radius: 4px !default;
     }
     
     @include m(small) {
-        padding: 2px 8px;
+        padding: 12px 8px;
     }
 }
