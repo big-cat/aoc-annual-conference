@@ -14,12 +14,21 @@ $bitcss-nav-vertical-padding: 12px !default;
     padding: 0;
     
     @include e(item) {
-        display: inline-block;
+        display: block;
+        
+        @include bp-m {
+            display: inline-block;
+        }
         
         @include m(spaced) {
             
             & + & {
-                margin-left: $bitcss-nav-padding; 
+                margin-top: $bitcss-nav-padding / 2;
+                
+                @include bp-m {
+                    margin-left: $bitcss-nav-padding;
+                    margin-top: 0;
+                }
             }
         }
     }

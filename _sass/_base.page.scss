@@ -15,11 +15,11 @@ html, :root {
     height: 100%;
     
     @include bp-m {
-        font-size: $base-font-size * 1.07;
+        font-size: $base-font-size + 1;
     }
     
     @include bp-l {
-        font-size: $base-font-size * 1.14;
+        font-size: $base-font-size + 2;
     }
 }
 
