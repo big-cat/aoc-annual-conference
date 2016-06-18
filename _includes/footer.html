@@ -1,6 +1,3 @@
-<div class="bg-meta p--l">
-    
-</div>
 <div class="bg-white p-t p-t--l@m p-b p-b--l@m">
     <div class="wrap wrap--padding">
         <div class="layout">
@@ -25,6 +22,9 @@
 <script>
 $(document).ready(function() {
     $('.tabs').tabslet();
+    $('.js-secondary-nav-toggle').on('click', function() {
+        $('.js-secondary-nav').toggleClass('show');
+    });
 });
 </script>
 </body>

@@ -37,7 +37,8 @@ $layout-gutter:  24px !default;
 }
 
 @for $i from 1 through $layout-columns {
-    .layout__item--#{$i}-of-#{$layout-columns} {
+    .layout__item--#{$i}-of-#{$layout-columns},
+    .width--#{$i}-of-#{$layout-columns} {
         width: percentage($i/$layout-columns);
     }
     
@@ -54,7 +55,8 @@ $layout-gutter:  24px !default;
 @include bp-m {
 
     @for $i from 1 through $layout-columns {
-        .layout__item--#{$i}-of-#{$layout-columns}\@m {
+        .layout__item--#{$i}-of-#{$layout-columns}\@m,
+        .width--#{$i}-of-#{$layout-columns}\@m {
             width: percentage($i/$layout-columns);
         }
         .layout__item--push-#{$i}-of-#{$layout-columns}\@m {
@@ -69,7 +71,8 @@ $layout-gutter:  24px !default;
 @include bp-l {
 
     @for $i from 1 through $layout-columns {
-        .layout__item--#{$i}-of-#{$layout-columns}\@l {
+        .layout__item--#{$i}-of-#{$layout-columns}\@l,
+        .width--#{$i}-of-#{$layout-columns}\@l {
             width: percentage($i/$layout-columns);
         }
         .layout__item--push-#{$i}-of-#{$layout-columns}\@l {
