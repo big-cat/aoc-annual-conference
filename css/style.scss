@@ -138,14 +138,23 @@
     padding-bottom: 75%;
 }
 
+.count {
+    padding-left: 40px;
+}
+
 .count::before {
+    position: absolute;
+    left: 0;
     counter-increment: count;
     content: counter(count);
-    border: 1px solid black;
+    border: 1px solid $color-5;
+    color: $color-5;
     border-radius: 50%;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
 }
 
 .tabs .active div {
